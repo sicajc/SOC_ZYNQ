@@ -1,3 +1,4 @@
+https://www.youtube.com/watch?v=LHfm91SThqI&list=PLXHMvqUANAFOviU0J8HSp0E91lLJInzX1&index=25
 # Using Xilinx IP core
 1. How to use Xilinx IP cores within your VERILOG CODE. Like PLL.
 2. Xilinx IP cores are sometimes more optimized and have better performance.
