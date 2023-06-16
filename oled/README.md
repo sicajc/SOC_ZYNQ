@@ -1,3 +1,4 @@
+https://www.youtube.com/watch?v=GILjTGScbfc&list=PLXHMvqUANAFOviU0J8HSp0E91lLJInzX1&index=10
 # OLED
 1. To display , we must put the data into the GDRAM
 2. We read the pixel value column wise, writing the data into GDRAM, we must store a particular sequence into the GDRAM for the OLED to display the correct information
