@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed May 31 11:51:32 2023
+# Process ID: 2132
+# Current directory: C:/Users/User/Desktop/SOC_FINAL_PROJECT/spiController/spiController/spiController.runs/impl_1
+# Command line: vivado.exe -log spiControl.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source spiControl.tcl -notrace
+# Log file: C:/Users/User/Desktop/SOC_FINAL_PROJECT/spiController/spiController/spiController.runs/impl_1/spiControl.vdi
+# Journal file: C:/Users/User/Desktop/SOC_FINAL_PROJECT/spiController/spiController/spiController.runs/impl_1\vivado.jou
+# Running On: DESKTOP-N6LOO8D, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 8, Host memory: 8370 MB
+#-----------------------------------------------------------
+source spiControl.tcl -notrace
