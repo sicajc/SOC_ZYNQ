@@ -1,5 +1,6 @@
-https://www.youtube.com/watch?v=V8jW81VaLOg&list=PLXHMvqUANAFOviU0J8HSp0E91lLJInzX1&index=8
-https://www.youtube.com/watch?v=kTjeTOf6ACI&list=PLXHMvqUANAFOviU0J8HSp0E91lLJInzX1&index=9
+### https://www.youtube.com/watch?v=V8jW81VaLOg&list=PLXHMvqUANAFOviU0J8HSp0E91lLJInzX1&index=8
+
+### https://www.youtube.com/watch?v=kTjeTOf6ACI&list=PLXHMvqUANAFOviU0J8HSp0E91lLJInzX1&index=9
 
 # SPI Controller note
 0. xc7z020clg484-1
