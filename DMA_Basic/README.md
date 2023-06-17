@@ -1,3 +1,4 @@
+https://www.youtube.com/watch?v=Xkpu8BXi3aI&list=PLXHMvqUANAFOviU0J8HSp0E91lLJInzX1&index=17
 # DMA transfer(AXI)
 0. xc7z020clg484-1
 1. AXI consist of a valid,data from master and ready from slave.

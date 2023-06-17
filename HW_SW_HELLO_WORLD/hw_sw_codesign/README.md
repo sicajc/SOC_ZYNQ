@@ -1,3 +1,4 @@
+https://www.youtube.com/watch?v=pEilWi6PMHY&list=PLXHMvqUANAFOviU0J8HSp0E91lLJInzX1&index=13
 # HW/SW Hello world
 1. We need to use the IP block dseign flow, later call the IP out
 2. Add the PS ZYNQ, this PS has 4 AXI GP ports to the PL part.

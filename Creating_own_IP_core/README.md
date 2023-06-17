@@ -1,3 +1,4 @@
+https://www.youtube.com/watch?v=I0eu_Y3pMmM&list=PLXHMvqUANAFOviU0J8HSp0E91lLJInzX1&index=14
 # IP core customizations
 0. xc7z020clg484-1
 1. The interfaces should be specified first!

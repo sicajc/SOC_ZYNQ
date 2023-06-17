@@ -1,4 +1,5 @@
-#　Merge Opeartion of two arrays
+https://www.youtube.com/watch?v=x3KyWuhGmJg&list=PLXHMvqUANAFOviU0J8HSp0E91lLJInzX1&index=20
+# Merge Opeartion of two arrays
 1. Given two arrays, merge them into a large arrays.
 2. When doing compare and reading datas, one must set the maximum size of the arrays.
 

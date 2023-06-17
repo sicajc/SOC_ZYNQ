@@ -1,3 +1,4 @@
+https://www.youtube.com/watch?v=c0w33XQDC6M&list=PLXHMvqUANAFOviU0J8HSp0E91lLJInzX1&index=16
 ## IP generation and software driver
 0. xc7z020clg484-1
 1. Since if we develop solely using HW, if we want to modify something, we must comlpetly change the original design and recompile the whole design which is an extremely inefficient manner of doing things.

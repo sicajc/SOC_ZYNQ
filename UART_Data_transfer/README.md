@@ -1,3 +1,4 @@
+https://www.youtube.com/watch?v=lzQ9hJ-wevg&list=PLXHMvqUANAFOviU0J8HSp0E91lLJInzX1&index=21
 # Data UART
 1. To do big data transfer from computer, we use ethernet in LINUX.
 2. We can use the UART interface to transfer large amount of data from Computer to your board.
@@ -31,6 +32,10 @@
 2. The baudRate must be set to the correct value you specified. And Connect them to the available COM port
 3. TerraTerm is able to send the whole image
 4. REMEMBER TO CHECK BINARY FILE!!
+
+# HxD
+1. Helps you examine your img file data, and spot the headerSize of your img.
+2. Usually img has 2 parts, header Part and the data part.
 
 
 # DataLoss during UART(Dummy bits)
