@@ -62,6 +62,7 @@ module tb(
     for(i=0;i<`headerSize;i=i+1)
     begin
         $fscanf(file,"%c",imgData);
+        // Write it back to the file1, this is also 
         $fwrite(file1,"%c",imgData);
     end
 

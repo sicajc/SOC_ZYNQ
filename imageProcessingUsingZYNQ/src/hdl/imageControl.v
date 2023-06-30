@@ -174,7 +174,7 @@ begin
     endcase
 end
 
-// Swapping between the line buffers.
+// Swapping between the line buffers, determine
 always @(*)
 begin
     case(currentRdLineBuffer)

@@ -24,6 +24,7 @@ https://www.youtube.com/watch?v=Zm3KzhahbUg&list=PLXHMvqUANAFOviU0J8HSp0E91lLJIn
 ```verilog
     always@(*)
     begin
+        sumData = 0;
         for(i=0;i<9;i=i+1)
         begin
             // This is the combinational circuit of parrallel adder tree.
@@ -34,7 +35,7 @@ https://www.youtube.com/watch?v=Zm3KzhahbUg&list=PLXHMvqUANAFOviU0J8HSp0E91lLJIn
 ```
 
 # Implementation note
-1. Use a calculator toe check for value, to allow better analysis of bit width.
+1. Use a calculator to check for value, to allow better analysis of bit width.
 
 
 # Control Logic

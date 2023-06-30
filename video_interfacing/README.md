@@ -57,8 +57,51 @@ https://www.youtube.com/watch?v=_o4FbVFLbuw&list=PLXHMvqUANAFOviU0J8HSp0E91lLJIn
 4. Note only the 4 bits within the 8 bits is the RGB signal needed to be sent to the external world.
 
 
-# Test video generator
+# Testing video generator
 1. v_tpg_0
 
-# Drag and drop
+## Drag and drop
 1. We can actually simply drag and drop the design RTL design into the block design. We will not be able to group signals together if we do so.
+2. The RTL design gets automatically converted into a block design.like this.
+3. Remember to validate after connecting every steps.
+
+## Create Wrapper and simulate the system
+1. In the Precense of many IP, simulation would be significantly slower. Thus in this case, synthesis your design onto your FPGA might be an even faster option.
+2. Using force clk and force constant can quickly test your design.
+3. When using clk Wizard, we must wait for the clk to get locked, which might takes some time for the inner PLL to lock to a certain clock frequency.
+4. It takes some time to actually generate the output in the simulation.
+5. Sometimes, IP block need some time to actually synchronize with the data. Thus we have to let them run for some time to see the result.
+6. If the IP is not working as you expected, look at the debug flag, underflow, overflow and status. These signals can be used simultaneously with dataSheet.
+7. Note, whenever there is no valid signal sending out, we must put low on the value, simply create a easy mux in the block design level to do such thing.
+
+## PINS assignment of VGA and other buttons
+1. Look at the data sheet of your FPGA. Search for the PIN assignment.
+2. Remember to change all of them to 3.3V
+
+
+# Xilinx VDMA IP Core
+1. Transfering data from DDR memory through VDMA into IP.
+2. Portion of memory used for storing video ftames is called frame buffers.
+3. VDMA is the special IP for sending the video.
+4. Having a standard AXI-4 stream interface. It can continuosly send video data to VGA working in loop mode.
+5. Note we can only access DDR through PS.
+6. Note we have to make all the signal within the same clock domain.
+
+# PS clock
+1. We are not able to generate 148.5 Mhz frequency in PS. How to solve this?
+2. Given 100 Mhz of PS, then use the clock wizard to convert the signal into 148.5 Mhz.
+3. Note that the stable clock only come after a certain period of time after reseting.
+4. Remember to let the locked controls the reset signal, s.t. the output is high only after the clock is stable.
+
+# Frame buffer of VDMA
+1. Simply give 1 for testing.
+2. Remember to change the data stream to the one your IP use for VDMA. Otherwise, transmittion might fail.
+3. Still remember to use unalinged data.
+4. Access the HP port to enable the data transfering.
+5. Also remember to fabric the interrupt on the PS, and connect the interrupt given by VDMA. Connecting it to the PS.
+6. Remember we want every clock to be running at 148.5 Mhz. So that the data can be synchronized! Thus must reconnect all input clock of IPs into 148.5Mhz. Input of clk wizard still comes from PS!
+7. Also the reset should all be synchronized, everyone should get reset from the peripheral reset. This cannot be made automatically, must disconnect PIN and do it manually.
+8. Then do validation to ensure that you connects onto the correct port.
+
+# SDK SW part
+1. Need interrupt header, vdma header and cache header.
